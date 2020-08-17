@@ -1,0 +1,33 @@
+				BIO DATA.
+
+
+PERSONAL INFORMATION : 
+
+Full Name : 		User Father Name
+
+Date Of Birth : 		2001-12-04
+
+Caste : 			Hindu
+
+Hobbies : 			Sports
+
+Contact Number : 		1234567890
+
+Email Address : 		abc@gmail.com
+
+
+EDUCATIONAL INFORMATION : 
+
+Education Qualification : 	Graduation Completed
+
+Ocupation : 		Web Devloper
+
+
+FAMILY INFORMATION : 
+
+Father's Name : 		Father
+
+Mother's Name : 		Mother
+
+Address : 			User Address
+

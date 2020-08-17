@@ -1,0 +1,89 @@
+<html>
+<style>
+	*{
+		box-sizing:border-box;
+	}
+	body{
+		margin:0;
+		padding:0;
+		font-family:arial;
+	}
+	form{
+		padding:8px;
+	}
+	fieldset{
+		background-color:#f2f2f2;
+		
+	}
+	legend{
+		font-weight:bold;
+		font-size:30px;
+	}
+	label{
+		display:inline-block;
+		font-size:24px;
+		margin:0px 5px;
+		width:20%;
+	}
+	input,textarea{
+		display:inline-block;
+		font-size:20px;
+		margin:10px 5px;
+		padding:8px;
+		width:40%;
+	}
+	span{
+		color:red;
+	}
+	textarea{
+		vertical-align:middle;
+	}
+	input[type='submit']{
+		background-color:green;
+		color:white;
+		font-size:30px;
+		cursor:pointer;
+		outline:none;
+	}
+	input[type='submit']:hover{
+		background-color:darkgreen;
+	}
+	div{
+		font-size:24px;
+		font-family:arial;
+	}
+</style>
+</head>
+<?php require('MarriageForm.php')?>
+<body>
+	<form action="<?php $_SERVER['PHP_SELF']?>" method="post">
+		<fieldset>
+			<legend>Personal Information</legend>
+			<label for="fn">First Name : </label>
+			<input type="text" id="fn" name="Fname" value="<?php echo $Fname?>" disabled ><br/><br/>
+			<label for="ln">Last Name : </label>
+			<input type="text" id="ln" name="Lname" disabled value="<?php echo $Lname?>"><br/><br/>
+			<label for="dob">Date Of Birth : </label>
+			<input type="date" name="dob" id="dob" max="2001-12-31" disabled value="<?php echo $Dob?>"><br/><br/>
+			<label for="caste">Caste : </label>
+			<input type="text" name="caste" id="caste" disabled value="<?php echo $Caste?>"><br/><br/>
+			<label for="hbby">Hobbies : </label>
+			<input type="text" name="hbby" id="hbby" disabled value="<?php echo $Hobby?>"><br/><br/>
+			<label for="edu">Education Qualification : </label>
+			<input type="text" name="edu" id="edu" disabled value="<?php echo $Education?>"><br/><br/>
+			<label for="ocu">Ocupation : </label>
+			<textarea  name="ocupation" id="ocu" disabled value="<?php echo $Ocupation?>"></textarea><br/><br/>
+			<label for="cnt">Contact : </label>
+			<input type="text" name="contact" id="cnt" disabled value="<?php echo $Contact?>"><br/><br/>
+			<label for="email">Email : </label>
+			<input type="email" name="email" id="email" disabled value="<?php echo $Email?>"><br/><br/>
+			<label for="add">Address : </label>
+			<textarea  name="Address" id="add" disabled value="<?php echo $Address?>"></textarea ><br/><br/>
+			<label for="faname">Father's Name : </label>
+			<input type="text" id="faname" name="Faname" disabled value="<?php echo $Faname?>"><br/><br/>
+			<label for="Moname">Mother's Name : </label>
+			<input type="text" id="Moname" name="Moname" disabled value="<?php echo $Moname?>"><br/><br/>
+		</fieldset>
+	</form>
+</body>
+</html>
